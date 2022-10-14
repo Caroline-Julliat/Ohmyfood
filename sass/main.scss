@@ -1,1 +1,10 @@
+@import "./utils/variables";
+@import "./utils/functions";
+@import "./utils/mixins";
 @import "./base/reset";
+@import "./base/typography";
+@import "./components/buttons";
+@import "./layouts/header";
+@import "./layouts/footer";
+@import "./page/index";
+@import "./page/menu";
