@@ -19,30 +19,36 @@
     <!-- MAIN -->
     <main>
         <!-- FORM -->
-        <form action="#" method="get">
-            <label for=""></label>
-            <input type="text">
-            <h1>Réservez le menu qui vous convient</h1>
-            <p>Découvrez des restaurants d'exception séléctionnés par nos soins</p>
-            <input type="submit" value="Explorer nos restaurants">
+        <form class="location-form" action="#" method="get">
+            <div class="location-form__header">
+                <label for="location"><i class="fa-solid fa-location-dot"></i></label>
+                <input type="text" name="location" placeholder="Paris, Belleville">
+            </div>
+            <div class="location-form__body">
+                <h1>Réservez le menu qui vous convient</h1>
+                <p>Découvrez des restaurants d'exception séléctionnés par nos soins</p>
+                <input type="submit" value="Explorer nos restaurants">
+            </div>
         </form>
         <!-- FUNCTIONING SECTION -->
-        <section>
+        <section class="functionning-sec" >
             <h2>Fonctionnement</h2>
-            <ol>
+            <ol class="functionning-sec__list" >
                 <li><i class="fa-solid fa-mobile-screen-button"></i>Choisissez un restaurant</li>
                 <li><i class="fa-solid fa-list-ul"></i>Composez votre menu</li>
                 <li><i class="fa-sharp fa-solid fa-store"></i>Dégustez au restaurant</li>
             </ol>
         </section>
         <!-- RESTAURANTS SECTION -->
-        <section>
+        <section class="restaurant-sec">
             <h2>Restaurants</h2>
-            <article>
-                <img src="images/la_palette_du_gout.jpg" alt="restaurant la palette du goût">
-                <h3>La palette du goût</h3>
-                <p>Ménilmontant</p>
-            </article>
+            <a href="./la_palette_du_gout.html">
+                <article class="restaurant-sec__card" >
+                    <img src="images/la_palette_du_gout.jpg" alt="restaurant la palette du goût">
+                    <h3>La palette du goût</h3>
+                    <p>Ménilmontant</p>
+                </article>
+            </a>
             <article></article>
             <article></article>
             <article></article>
