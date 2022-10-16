@@ -1,0 +1,19 @@
+// FOOTER
+
+footer{
+    background-color: $color-bg-dark;
+    height: 200px;
+    padding-top: 25px;
+    img{
+        width: 100px;
+        padding-bottom: 15px;
+    }
+    a{
+        color: white;
+        font-size: 16px;
+    }
+    i{
+        font-size: 12px;
+        margin-right: 10px;
+    }
+}

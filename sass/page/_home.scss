@@ -1,2 +1,30 @@
+// FORM
 
+.location-form {
+    background-color: $color_bg1;
+    height: 250px;
+    &__header{
+        height: 50px;
+        background-color: $color_bg2;
+        @include center;
+        input{
+        border: none;
+        background-color: $color_bg2;
+        text-align: center;
+        &::placeholder{
+            color: black;   
+        }
+    }
+    }
+    &__body{
+        @include center;
+        flex-direction: column;
+        text-align: center;
+        padding-top: 40px;
+    }
+}
+
+.functionning_sec{
+    background-color: red;
+}
     
