@@ -90,8 +90,23 @@ a {
   font-weight: 300;
 }
 
-article h1 {
-  font-family: shrikland, sans-serif;
+.big-title {
+  font-size: 24px;
+  font-weight: 600;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.menu-title {
+  font-family: shrikhand, sans-serif;
+  font-size: 26px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.menu-category {
+  text-transform: uppercase;
+  font-size: 16px;
 }
 
 p, li {
@@ -159,6 +174,8 @@ footer i {
 }
 .location-form__header input::placeholder {
   color: black;
+  font-size: 16px;
+  font-weight: 500;
 }
 .location-form__body {
   display: flex;
@@ -166,11 +183,14 @@ footer i {
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  padding-top: 40px;
 }
 
-.functionning_sec {
-  background-color: red;
+.functionning-sec {
+  padding-bottom: 40px;
+}
+
+.restaurants-sec {
+  background-color: #F6F6F6;
 }
 
 /*# sourceMappingURL=style.css.map */

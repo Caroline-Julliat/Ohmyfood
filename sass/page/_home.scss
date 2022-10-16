@@ -1,3 +1,4 @@
+
 // FORM
 
 .location-form {
@@ -12,7 +13,9 @@
         background-color: $color_bg2;
         text-align: center;
         &::placeholder{
-            color: black;   
+            color: black;
+            font-size: 16px;
+            font-weight: 500;   
         }
     }
     }
@@ -20,11 +23,14 @@
         @include center;
         flex-direction: column;
         text-align: center;
-        padding-top: 40px;
     }
 }
 
-.functionning_sec{
-    background-color: red;
+.functionning-sec{
+    padding-bottom: 40px;
+}
+
+.restaurants-sec{
+    background-color: $color_bg1;
 }
     
