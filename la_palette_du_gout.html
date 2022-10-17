@@ -19,11 +19,13 @@
     </header>
     <!-- ARTICLE -->
     <article class="menu">
-        <img  src="./images/la_palette_du_gout.jpg" alt="restaurant la palette du goût">
+        <header class="menu-header" >
+            <img  class="menu-header__img" src="./images/la_palette_du_gout.jpg" alt="restaurant la palette du goût">
+        </header>
         <form class="menu-form"action="#" method="get">
-            <h1 class="menu-title">La Palette du goût</h1>
-            <fieldset>
-                <legend class="menu-category">Entrées</legend>
+            <h1 class="menu-form__title menu-title">La Palette du goût</h1>
+            <fieldset class="menu-form__category" >
+                <legend>Entrées</legend>
             <div>
                 <input type="radio" id="escargot" name="Appetizer" value="1"
                        checked>
@@ -66,14 +68,7 @@
                     </div>
                 </label>
             </div>
-            </fieldset>        
-            <fieldset>
-                <legend>Plats</legend>
-            </fieldset>
-            <fieldset>
-                <legend>Desserts</legend>
-            </fieldset>
-            
+            </fieldset>       
         </form>
     </article>
     <!-- FOOTER -->
