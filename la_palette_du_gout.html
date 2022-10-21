@@ -13,47 +13,51 @@
 </head>
 <body>
     <!-- HEADER -->
-    <header>
+    <header class="page-header">
         <a href="./index.html"><i class="fa-solid fa-arrow-left"></i></a>
         <img src="images/ohmyfood.png" alt="logo ohmyfood">
     </header>
+
+
+
+
     <!-- ARTICLE -->
     <article class="menu">
         <!-- ARTICLE HEADER -->
         <header class="menu-header" >
-            <img  class="menu-header__img" src="./images/la_palette_du_gout.jpg" alt="restaurant la palette du goût">
+            <div class="menu-header__img">
+                <img src="./images/la_palette_du_gout.jpg" alt="restaurant la palette du goût">
+            </div>
+            <div class="menu-header__title">
+                <h1 class="menu-title">La Palette du goût</h1>
+            </div>
         </header>
+        <!-- APPETIZERS SECTION -->
+        <section class="menu-category">
 
-        <!-- ARTICLE FORM -->
-        <form class="menu-form"action="#" method="get">
-            <h1 class="menu-form__title menu-title">La Palette du goût</h1>
+            <h2 class="menu-category__title uppercase-title">Entrées</h2>
 
-            <!-- CATEGORY : APPETIZERS -->
+            <div class="menu-item">
+                <div class="menu-item__title">
+                    <h3 class="item-title">Fricassée d'escargot</h3>  
+                </div>
+                <div class="menu-item__detail">
+                    <p class="description">Au piment d'espelette et à la crème d'ail</p>
+                    <p class="price">25€</p>
+                </div>
+                <div class="check-box">
+                    <i class="check-box__icone fa-solid fa-circle-check"></i>
+                </div>
+            </div>
 
-            <fieldset class="menu-form__category" >
-
-                <legend class="uppercase-title">Entrées</legend>
-
-            
-                <input type="radio" id="appetizer_1" name="Appetizer" value="1"
-                       checked>
-                <label class="menu-item" for="appetizer_1">
-                    <div class="menu-item__detail">
-                        <h3>Fricassée d'escargot</h3>
-                        <p>Au piment d'espelette et à la crème d'ail</p>
-                    </div>
-                    <p class="menu-item__price" >25€</p>
-                    <div class="check-box">
-                        <i class=" check-box__icone fa-solid fa-circle-check"></i>
-                    </div>
-                </label>
-            
-            
-            
-        </form>
+        </section>
     </article>
+
+
+
+
     <!-- FOOTER -->
-    <footer>
+    <footer class="page-footer">
         <img src="images/ohmyfood_blanc.png" alt="logo ohmyfood">
         <ul>
             <li><a href="#"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a></li>
