@@ -100,8 +100,6 @@ a {
 .menu-title {
   font-family: shrikhand, sans-serif;
   font-size: 28px;
-  padding-top: 25px;
-  padding-bottom: 25px;
 }
 
 .uppercase-title {
@@ -182,13 +180,13 @@ p, li {
   z-index: 2;
 }
 .like-btn:hover .like-btn__hide {
-  animation: heart-fill 1000ms ease-out forwards;
+  animation: heart-fill 1300ms ease-out forwards;
 }
 .like-btn:hover .like-btn__stroke {
-  animation: stroke-disappear 500ms 500ms ease-in-out forwards;
+  animation: stroke-disappear 700ms 700ms ease-in-out forwards;
 }
 .like-btn:hover .like-btn__full {
-  animation: heart-scale 300ms 800ms ease-in-out forwards;
+  animation: heart-scale 500ms 1000ms ease-in-out forwards;
 }
 
 .page-header {
@@ -362,8 +360,9 @@ p, li {
 .menu-header__title {
   background-color: #F6F6F6;
   border-radius: 40px 40px 0 0;
-  padding: 10px 20px;
-  margin-top: -30px;
+  padding: 30px 20px 0px 20px;
+  margin-top: -40px;
+  padding-bottom: 15px;
   position: relative;
 }
 
@@ -381,7 +380,7 @@ p, li {
 
 .menu-category {
   background-color: #F6F6F6;
-  padding: 12px;
+  padding: 12px 14px;
 }
 
 .menu-category__title::after {
@@ -397,9 +396,10 @@ p, li {
 .menu-item {
   display: flex;
   justify-content: space-between;
+  background: white;
   border-radius: 15px;
   box-shadow: 1px 1px 15px 2px rgba(0, 0, 0, 0.1);
-  margin-top: 12px;
+  margin: 12px 0;
   overflow: hidden;
 }
 .menu-item__detail {
@@ -423,6 +423,7 @@ p, li {
   font-weight: 700;
   align-self: center;
   padding-top: 20px;
+  padding-right: 5px;
 }
 .menu-item__price .check-box {
   background-color: #99E2D0;
@@ -442,6 +443,43 @@ p, li {
 }
 .menu-item:hover .fa-circle-check {
   transform: rotate(360deg);
+}
+
+@keyframes entrance-effect {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.menu-item {
+  transform: translateY(30px);
+  opacity: 0;
+  animation: entrance-effect 1000ms forwards;
+}
+.menu-item1 {
+  animation-delay: 300ms;
+}
+.menu-item2 {
+  animation-delay: 600ms;
+}
+.menu-item3 {
+  animation-delay: 900ms;
+}
+
+.btn-section {
+  display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #F6F6F6;
+  padding-bottom: 30px;
+}
+.btn-section__menu {
+  padding: 16px 48px;
 }
 
 /*# sourceMappingURL=style.css.map */

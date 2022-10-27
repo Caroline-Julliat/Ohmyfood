@@ -68,13 +68,13 @@
     }
     &:hover{
         & .like-btn__hide{
-            animation: heart-fill 1000ms ease-out forwards;
+            animation: heart-fill 1300ms ease-out forwards;
         }
         & .like-btn__stroke{
-            animation: stroke-disappear 500ms 500ms ease-in-out forwards;
+            animation: stroke-disappear 700ms 700ms ease-in-out forwards;
         }
         & .like-btn__full{
-            animation: heart-scale 300ms 800ms ease-in-out forwards;
+            animation: heart-scale 500ms 1000ms ease-in-out forwards;
         }
     }
 }

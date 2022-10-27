@@ -10,8 +10,9 @@
     &__title{
         background-color: $color-bg1;
         border-radius: 40px 40px 0 0;
-        padding: 10px 20px;
-        margin-top: -30px;
+        padding: 30px 20px 0px 20px;
+        margin-top: -40px;
+        padding-bottom: 15px;
         position: relative;
     }
 }
@@ -33,7 +34,7 @@
 
 .menu-category{
     background-color: $color_bg1;
-    padding: 12px;
+    padding: 12px 14px;
 }
 
 .menu-category__title::after{
@@ -49,9 +50,10 @@
 .menu-item{
     display: flex;
     justify-content: space-between;
+    background: white;
     border-radius: 15px;
     box-shadow: 1px 1px 15px 2px rgba(0, 0, 0, 0.1);
-    margin-top: 12px;
+    margin: 12px 0;
     overflow: hidden;
     &__detail{
         padding: 5px 15px;
@@ -73,6 +75,7 @@
             font-weight: 700;
             align-self: center;
             padding-top: 20px;
+            padding-right: 5px;
         }
         .check-box{
             background-color: $color_tertiary;
@@ -99,5 +102,54 @@
     }
 }
 
+
+///// ANIM //////
+
+
+@keyframes entrance-effect {
+    0% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+.menu-item {
+    transform: translateY(30px);
+    opacity: 0;
+    animation: entrance-effect 1000ms forwards;
+    &1{
+        animation-delay: 300ms;
+    }
+    &2{
+        animation-delay: 600ms;
+    }
+    &3{
+        animation-delay: 900ms;
+    }
+}
+
+
+
+
+
+
+
+
+// BUTTON SECTION
+
+.btn-section{
+    display: flex;
+    @include center;
+    background: $color-bg1;
+    padding-bottom: 30px;
+    &__menu{
+        padding: 16px 48px;
+    }
+}
 
 
