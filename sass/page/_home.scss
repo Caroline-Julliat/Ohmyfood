@@ -3,7 +3,7 @@
 
 .location-form {
     background-color: $color_bg1;
-    height: 335px;
+    padding-bottom: 40px;
     &__header{
         height: 50px;
         background-color: $color_bg2;
@@ -22,6 +22,7 @@
         @include center;
         flex-direction: column;
         text-align: center;
+        padding-top: 40px;
         h1{
             width: 70%;
         }
@@ -32,7 +33,11 @@
 // FUNCTIONNING SECTION
 
 .functionning{
-    padding-bottom: 50px;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    h2{
+        padding-bottom: 5px;
+    }
     ol{
         counter-reset: li;
         list-style: none;
@@ -40,8 +45,8 @@
     }
     &__item{
         background-color: $color_bg1;
-        padding: 25px;
-        margin: 22px 0px 22px 10px;
+        padding: 26px 25px 26px 25px;
+        margin: 25px 0px 25px 10px;
         border-radius: 25px;
         font-weight: 500;
         box-shadow: 1px 1px 15px 2px rgba(0, 0, 0, 0.1);
@@ -49,6 +54,13 @@
         i{
             color: #7E7E7E;
             margin-right: 25px;
+            font-size: 20px;
+        }
+        &:hover{
+            background-color: $color_primary_light;
+            & i {
+                color: $color_primary;
+            }
         }
     }
     &__item::before{
@@ -63,6 +75,7 @@
         border-radius: 50%;
         background-color: $color_primary;
         color: white;
+        font-size: 14px;
         @include center;
     }
 }
@@ -72,7 +85,10 @@
 
 .restaurants{
     background-color: $color_bg1;
-    padding: 0 5% 60px 5%;
+    padding: 50px 5% 50px 5%;
+    h2{
+        padding-bottom: 15px;
+    }
     
 }
 
@@ -83,10 +99,10 @@
     box-shadow: 1px 1px 15px 2px rgba(0, 0, 0, 0.1);
     position: relative;
     margin-top: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     &__img{
         width: 100%;
-        height: 170px;
+        height: 175px;
         object-fit: cover;
         object-position: 50% 100%;
         border-radius: 20px 20px 0 0;

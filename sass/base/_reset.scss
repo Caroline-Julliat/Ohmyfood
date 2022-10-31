@@ -77,6 +77,10 @@ th {
 
 // GENERAL
 
+*::selection{
+  background-color: $color_tertiary;
+}
+
 .functionning, .page-footer {
   padding-right: 20px;
   padding-left: 20px;
