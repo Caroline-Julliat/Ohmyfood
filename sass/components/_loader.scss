@@ -39,8 +39,13 @@
 }
 
 @keyframes loader-diseappear {
+    80%{
+        opacity: 0;
+        transform: (scale(1));
+    }
     100%{
         opacity: 0;
+        transform: (scaleY(0)); 
     }
 }
 
@@ -56,6 +61,7 @@
     flex-direction: column;
     gap: 50px;
     animation: loader-diseappear 1000ms 2500ms forwards;
+    transform-origin: top;
 }
 
 .loader-clock{
