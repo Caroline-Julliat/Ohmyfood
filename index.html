@@ -12,6 +12,25 @@
     <title>Ohmyfood - Réservez le menu qui vous convient</title>
 </head>
 <body>
+    <!-- LOADER -->
+    <div class="loader">
+        <div class="loader-clock">
+            <img class="loader__item loader__plate" src="images/plate.png" alt="image d'une assiette">
+            <img class="loader__item loader__fork" src="images/fork.png" alt="image d'une fourchette">
+            <img class="loader__item loader__knife" src="images/knife.png" alt="image d'un couteau">
+            <div class="loader__item loader__dot"></div>
+        </div>
+        <div class="loader__logo">
+            <span class="loader__logo-item loader__logo-1">O</span>
+            <span class="loader__logo-item loader__logo-2">h</span>
+            <span class="loader__logo-item loader__logo-3">m</span>
+            <span class="loader__logo-item loader__logo-4">y</span>
+            <span class="loader__logo-item loader__logo-5">f</span>
+            <span class="loader__logo-item loader__logo-6">o</span>
+            <span class="loader__logo-item loader__logo-7">o</span>
+            <span class="loader__logo-item loader__logo-8">d</span>
+        </div>
+    </div>
     <!-- HEADER -->
     <header class="page-header">
         <img src="images/ohmyfood.png" alt="logo ohmyfood">
@@ -22,7 +41,7 @@
         <form class="location-form" action="#" method="get">
             <div class="location-form__header">
                 <label for="location"><i class="fa-solid fa-location-dot"></i></label>
-                <input type="text" name="location" placeholder="Paris, Belleville">
+                <input type="text" name="location" id="location" placeholder="Paris, Belleville">
             </div>
             <div class="location-form__body">
                 <h1 class="big-title">Réservez le menu qui vous convient</h1>

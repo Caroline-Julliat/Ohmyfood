@@ -1,0 +1,143 @@
+@keyframes fork-rotate {
+    50% {
+        transform: translateX(-50%) translateY(-100%) rotate(330deg);
+    } 
+    62% {
+        transform: translateX(-50%) translateY(-100%) rotate(330deg);
+    }
+    75% {
+        transform: translateX(-50%) translateY(-100%) rotate(345deg);
+    } 
+    88% {
+        transform: translateX(-50%) translateY(-100%) rotate(345deg);
+    } 
+    100% {
+        transform: translateX(-50%) translateY(-100%) rotate(360deg);
+    } 
+}  
+
+@keyframes knife-rotate {
+    100% {
+        transform: translateX(-50%) translateY(-100%) rotate(360deg);
+    } 
+}   
+
+@keyframes logo {
+    25% {
+        color: #9356DC;
+    } 
+    50% {
+        transform: translateY(-10px);
+        color: #FF79DA;
+    } 
+    75% {
+        color: #9356DC;
+    } 
+    100% {
+        transform: translateY(0);
+    } 
+}
+
+@keyframes loader-diseappear {
+    100%{
+        opacity: 0;
+    }
+}
+
+
+.loader{
+    position: fixed;
+    background: white;
+    opacity: 0.95;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+    @include center;
+    flex-direction: column;
+    gap: 50px;
+    animation: loader-diseappear 1000ms 2500ms forwards;
+}
+
+.loader-clock{
+    height: 150px;
+    width: 150px;
+    position: relative;
+}
+
+.loader__fork{
+    position: absolute;
+    height: 65px;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-100%);
+    transform-origin: bottom;
+    animation: fork-rotate 1500ms linear;
+}
+
+.loader__knife{
+    position: absolute;
+    height: 65px;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-100%) rotate(15deg);
+    transform-origin: bottom;
+    animation: knife-rotate 300ms linear 3;
+}
+
+.loader__dot{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    height: 10px;
+    width: 10px;
+    border-radius: 100%;
+    background: black;
+}
+
+.loader__logo{
+    height: 60px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 1.5px;
+   
+}
+
+.loader__logo-item{
+    font-family: $font_heading;
+    font-size: 20px;
+    animation: logo 300ms 2;
+}
+
+.loader__logo{
+    &-1{
+        animation-delay: 1700ms;
+    }
+    &-2{
+        animation-delay: 1750ms;
+    }
+    &-3{
+        animation-delay: 1800ms;
+    }
+    &-4{
+        animation-delay: 1850ms;
+    }
+    &-5{
+        animation-delay: 1900ms;
+    }
+    &-6{
+        animation-delay: 1950ms;
+    }
+    &-7{
+        animation-delay: 2000ms;
+    }
+    &-8{
+        animation-delay: 2050ms;
+    }
+}
+
+
+
+
