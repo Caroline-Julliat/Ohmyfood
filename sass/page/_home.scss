@@ -80,10 +80,6 @@
         font-weight: 500;
         box-shadow: 1px 1px 15px 2px rgba(0, 0, 0, 0.1);
         position: relative;
-        width: 100%;
-        max-width: 440px;
-        margin-right: auto;
-        margin-left: auto;
         cursor: default;
         @include from-tablet-size{
             display: flex;
@@ -131,7 +127,7 @@
     background-color: $color_bg1;
     padding: 50px 5% 50px 5%;
     h2{
-        padding-bottom: 25px;
+        padding-bottom: 15px;
     }
     
 }
@@ -152,8 +148,6 @@
     position: relative;
     margin-top: 10px;
     margin-bottom: 15px;
-    max-width: 440px;
-    margin:auto;
     @include from-tablet-size{
         width: 48%;
     }
@@ -186,6 +180,8 @@
     }
 }
     
+
+
 
 .flag-new{
     position: absolute;
