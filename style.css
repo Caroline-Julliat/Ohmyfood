@@ -79,8 +79,8 @@ th {
 }
 
 .functionning, .page-footer {
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 5%;
+  padding-left: 5%;
 }
 
 a {
@@ -127,7 +127,7 @@ p {
 }
 
 .btn {
-  background: linear-gradient(180deg, #FF79DA 0%, #9356DC 100%);
+  background: linear-gradient(170deg, #FF79DA 0%, #9356DC 100%);
   color: white;
   border: none;
   padding: 16px 20px;
@@ -135,6 +135,7 @@ p {
   font-weight: 400;
   box-shadow: 0px 5px 7px 1px rgba(0, 0, 0, 0.2);
   margin: 25px;
+  cursor: pointer;
 }
 
 @keyframes heart-fill {
@@ -158,6 +159,7 @@ p {
 .like-btn {
   position: relative;
   border: 2px solid red;
+  cursor: pointer;
 }
 .like-btn__item {
   position: absolute;
@@ -166,7 +168,7 @@ p {
   transform: translateX(-50%) translateY(-50%);
 }
 .like-btn__full {
-  background: -webkit-linear-gradient(180deg, #FF79DA 0%, #9356DC 100%);
+  background: -webkit-linear-gradient(45deg, #FF79DA 0%, #9356DC 100%);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -378,9 +380,20 @@ p {
   margin-right: 10px;
 }
 
+.home-page header {
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
 .location-form {
   background-color: #F6F6F6;
-  padding-bottom: 40px;
+  padding-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .location-form {
+    background-image: url(images/bg-img.jpg);
+    background-size: cover;
+    background-position: 0% 50%;
+  }
 }
 .location-form__header {
   height: 50px;
@@ -389,14 +402,21 @@ p {
   align-items: center;
   justify-content: center;
 }
+.location-form__header label {
+  padding-right: 15px;
+}
 .location-form__header input {
   border: none;
   background-color: #EAEAEA;
   text-align: center;
+  width: 120px;
 }
 .location-form__header input::placeholder {
   color: black;
   font-weight: 500;
+}
+.location-form__header input:focus {
+  outline-color: #99E2D0;
 }
 .location-form__body {
   display: flex;
@@ -406,8 +426,19 @@ p {
   text-align: center;
   padding-top: 40px;
 }
+@media screen and (min-width: 1024px) {
+  .location-form__body {
+    padding: 100px;
+  }
+}
 .location-form__body h1 {
   width: 70%;
+  padding-bottom: 10px;
+}
+@media screen and (min-width: 768px) {
+  .location-form__body h1, .location-form__body p {
+    color: white;
+  }
 }
 
 .functionning {
@@ -421,6 +452,12 @@ p {
   counter-reset: li;
   list-style: none;
 }
+@media screen and (min-width: 768px) {
+  .functionning ol {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 .functionning__item {
   background-color: #F6F6F6;
   padding: 26px 25px 26px 25px;
@@ -429,11 +466,34 @@ p {
   font-weight: 500;
   box-shadow: 1px 1px 15px 2px rgba(0, 0, 0, 0.1);
   position: relative;
+  width: 100%;
+  max-width: 440px;
+  margin-right: auto;
+  margin-left: auto;
+  cursor: default;
+}
+@media screen and (min-width: 768px) {
+  .functionning__item {
+    display: flex;
+    width: 27%;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1024px) {
+  .functionning__item {
+    width: 30%;
+  }
 }
 .functionning__item i {
   color: #7E7E7E;
   margin-right: 25px;
   font-size: 20px;
+}
+@media screen and (min-width: 768px) {
+  .functionning__item i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 .functionning__item:hover {
   background-color: #F5EDFF;
@@ -464,7 +524,15 @@ p {
   padding: 50px 5% 50px 5%;
 }
 .restaurants h2 {
-  padding-bottom: 15px;
+  padding-bottom: 25px;
+}
+
+@media screen and (min-width: 768px) {
+  .container__restaurants {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .restaurants__card {
@@ -474,6 +542,18 @@ p {
   position: relative;
   margin-top: 10px;
   margin-bottom: 15px;
+  max-width: 440px;
+  margin: auto;
+}
+@media screen and (min-width: 768px) {
+  .restaurants__card {
+    width: 48%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .restaurants__card {
+    width: 23%;
+  }
 }
 .restaurants__card__img {
   width: 100%;
@@ -523,16 +603,20 @@ p {
 .menu-header__title {
   background-color: #F6F6F6;
   border-radius: 40px 40px 0 0;
-  padding: 30px 20px 0px 20px;
+  padding: 30px 5% 15px 5%;
   margin-top: -40px;
-  padding-bottom: 15px;
   position: relative;
 }
 
 .menu__like {
   position: absolute;
-  bottom: 50%;
-  right: 12%;
+  bottom: 40%;
+  right: 10%;
+}
+@media screen and (min-width: 768px) {
+  .menu__like {
+    right: 6%;
+  }
 }
 .menu__like i {
   font-size: 22px;
@@ -541,9 +625,29 @@ p {
   background: #F6F6F6;
 }
 
-.menu-category {
+.container-category {
   background-color: #F6F6F6;
-  padding: 12px 14px;
+  padding-left: 4%;
+  padding-right: 4%;
+}
+@media screen and (min-width: 1024px) {
+  .container-category {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.menu-category {
+  padding: 12px 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+}
+@media screen and (min-width: 1024px) {
+  .menu-category {
+    width: 30%;
+  }
 }
 
 .menu-category__title::after {
@@ -560,6 +664,8 @@ p {
   display: flex;
   justify-content: space-between;
   background: white;
+  max-width: 600px;
+  width: 100%;
   border-radius: 15px;
   box-shadow: 1px 1px 15px 2px rgba(0, 0, 0, 0.1);
   margin: 12px 0;
@@ -579,8 +685,6 @@ p {
   display: flex;
   gap: 15px;
   align-items: flex-end;
-  margin-right: -60px;
-  transition: all 1000ms;
 }
 .menu-item__price p {
   font-weight: 700;
@@ -594,6 +698,8 @@ p {
   padding: 0 20px;
   display: flex;
   align-items: center;
+  margin-right: -60px;
+  transition: all 1000ms;
 }
 .menu-item__price .fa-circle-check {
   color: white;
@@ -601,7 +707,7 @@ p {
   transform: rotate(0deg);
   transition: all 1000ms;
 }
-.menu-item:hover .menu-item__price {
+.menu-item:hover .check-box {
   margin-right: 0;
 }
 .menu-item:hover .fa-circle-check {

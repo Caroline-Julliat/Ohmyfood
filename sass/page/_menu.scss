@@ -10,17 +10,19 @@
     &__title{
         background-color: $color-bg1;
         border-radius: 40px 40px 0 0;
-        padding: 30px 20px 0px 20px;
+        padding: 30px 5% 15px 5%;
         margin-top: -40px;
-        padding-bottom: 15px;
         position: relative;
     }
 }
 
 .menu__like{
     position: absolute;
-    bottom: 50%;
-    right: 12%;
+    bottom: 40%;
+    right: 10%;
+    @include from-tablet-size{
+        right: 6%;
+    }
     & i{
         font-size: 22px;
     }
@@ -32,9 +34,25 @@
 
 // MENU CATEGORY
 
-.menu-category{
+.container-category{
     background-color: $color_bg1;
-    padding: 12px 14px;
+    padding-left: 4%;
+    padding-right: 4%;
+    @include desktop-only{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.menu-category{
+    padding: 12px 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    @include desktop-only{
+        width: 30%
+    }
 }
 
 .menu-category__title::after{
@@ -51,6 +69,8 @@
     display: flex;
     justify-content: space-between;
     background: white;
+    max-width: 600px;
+    width: 100%;
     border-radius: 15px;
     box-shadow: 1px 1px 15px 2px rgba(0, 0, 0, 0.1);
     margin: 12px 0;
@@ -69,8 +89,8 @@
         display: flex;
         gap: 15px;
         align-items: flex-end;
-        margin-right: -60px;
-        transition: all 1000ms;        
+        
+                
         p{
             font-weight: 700;
             align-self: center;
@@ -83,7 +103,8 @@
             padding: 0 20px;
             display: flex;
             align-items: center;
-
+            margin-right: -60px;
+            transition: all 1000ms;
         }
         .fa-circle-check{
             color: white;
@@ -93,7 +114,7 @@
         }
     }
     &:hover{
-        & .menu-item__price{
+        & .check-box{
             margin-right: 0;
         }
         & .fa-circle-check{
