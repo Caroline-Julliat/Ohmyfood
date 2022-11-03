@@ -1,16 +1,30 @@
-// COLOR
+// COLOR //
 $color_primary: #9356dc;
 $color_primary_light: #f5edff;
 $color_secondary: #ff79da;
 $color_tertiary: #99e2d0;
 $color_bg1: #f6f6f6;
 $color_bg2: #eaeaea;
-$color-bg-dark: #353535;
+$color-dark: #353535;
 
-// FONT
+
+// SHADOW COLOR //
+$light_opacity: 0.1;
+$medium_opacity: 0.2;
+$strong_opacity: 0.3;
+$strong2_opacity: 0.4;
+
+
+// FONT //
 $font_heading: shrikhand, sans-serif;
 $font_body: roboto, sans-serif;
 
+
+// LIGHTEN BUTTON //
+$lighten-color: 5%;
+
+
+// BREAKPOINTS //
 $breakpoints: (
   tablet: 768px,
   desktop: 1024px,

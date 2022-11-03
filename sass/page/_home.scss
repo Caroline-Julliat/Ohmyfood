@@ -76,7 +76,7 @@
     margin: 25px 0px 25px 10px;
     border-radius: 25px;
     font-weight: 500;
-    @include shadow;
+    @include shadow ($medium_opacity);
     position: relative;
     cursor: default;
     @include from-tablet-size {
@@ -138,7 +138,7 @@
 .restaurants__card {
   background-color: white;
   border-radius: 20px;
-  @include shadow;
+  @include shadow ($light_opacity);
   position: relative;
   margin-top: 10px;
   margin-bottom: 15px;

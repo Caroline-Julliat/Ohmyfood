@@ -5,8 +5,8 @@
   justify-content: center;
 }
 
-@mixin shadow {
-  box-shadow: 1px 1px 15px 2px rgba(0, 0, 0, 0.1);
+@mixin shadow ($opacity){
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, $opacity);
 }
 
 @mixin from-tablet-size {

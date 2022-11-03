@@ -7,7 +7,15 @@
   padding: 16px 20px;
   border-radius: 25px;
   font-weight: 400;
-  box-shadow: 0px 5px 7px 1px rgba(0, 0, 0, 0.2);
+  @include shadow ($strong_opacity);
   margin: 25px;
   cursor: pointer;
+  &:hover {
+    background: linear-gradient(
+      170deg,
+      lighten($color_secondary, $lighten-color) 0%,
+      lighten($color_primary, $lighten-color) 100%
+    );
+    @include shadow ($strong2_opacity);
+  }
 }

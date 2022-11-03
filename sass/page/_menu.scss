@@ -75,7 +75,7 @@
   max-width: 600px;
   width: 100%;
   border-radius: 15px;
-  @include shadow;
+  @include shadow ($light_opacity);
   margin: 12px 0;
   overflow: hidden;
   // for entrance effect
