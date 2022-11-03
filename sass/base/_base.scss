@@ -10,11 +10,14 @@ p {
   margin-bottom: 4px;
 }
 
-// STICKY FOOTER
+body{
+  min-width: 320px;
+  max-width: 1680px;
+  margin: auto;
+}
 
-html,
-body {
-  height: 100%;
+html{
+  background-color: darken($color_bg2, 5%);
 }
 
 body {
@@ -22,6 +25,15 @@ body {
   flex-direction: column;
   background-color: $color-bg1;
 }
+
+// STICKY FOOTER
+
+html,
+body {
+  height: 100%;
+}
+
+
 
 footer {
   margin-top: auto;

@@ -52,27 +52,34 @@
 // FUNCTIONNING SECTION
 
 .functionning {
-  padding: 45px 5% 45px 5%;
+  padding: 45px 5% 70px 9%;
   background-color: white;
   h2 {
-    padding-bottom: 5px;
+    padding-bottom: 25px;
+    margin-left: -4.5%;
   }
   ol {
     counter-reset: li;
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    gap: 25px;
     @include from-tablet-size {
-      display: flex;
+      flex-direction: row;
       justify-content: space-between;
     }
   }
   &__item {
     background-color: $color_bg1;
     padding: 26px 25px 26px 25px;
-    margin: 25px 0px 25px 10px;
     border-radius: 25px;
     font-weight: 500;
     @include shadow ($medium_opacity);
     position: relative;
+    width: 100%;
+    max-width: 440px;
+    margin: auto;
     cursor: default;
     @include from-tablet-size {
       display: flex;
@@ -116,15 +123,19 @@
 // RESTAURANTS SECTION
 
 .restaurants {
-  padding: 50px 5% 50px 5%;
+  padding: 50px 5% 60px 5%;
+  background: $color-bg1;
   h2 {
     padding-bottom: 15px;
   }
 }
 
 .container__restaurants {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   @include from-tablet-size {
-    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
   }
@@ -137,6 +148,9 @@
   position: relative;
   margin-top: 10px;
   margin-bottom: 15px;
+  width: 100%;
+  max-width: 440px;
+  margin: auto;
   @include from-tablet-size {
     width: 48%;
   }

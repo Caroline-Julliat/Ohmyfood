@@ -7,9 +7,9 @@
     width: 100%;
     height: 240px;
     object-fit: cover;
-    object-position: 50% 0%;
     @include desktop-only {
       height: 350px;
+      object-position: 50% 55%;
     }
   }
   &__title {

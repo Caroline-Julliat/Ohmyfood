@@ -83,9 +83,14 @@ p {
   margin-bottom: 4px;
 }
 
-html,
 body {
-  height: 100%;
+  min-width: 320px;
+  max-width: 1680px;
+  margin: auto;
+}
+
+html {
+  background-color: #dddddd;
 }
 
 body {
@@ -94,13 +99,17 @@ body {
   background-color: #f6f6f6;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 footer {
   margin-top: auto;
 }
 
 /*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
 html,
-body,
 p,
 ol,
 ul,
@@ -379,12 +388,24 @@ h3 {
 
 .page-footer {
   background-color: #353535;
-  height: 200px;
   padding: 25px 5% 25px 5%;
 }
 .page-footer img {
   width: 100px;
   padding-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .page-footer img {
+    display: block;
+    margin: auto;
+    padding-bottom: 40px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .page-footer ul {
+    display: flex;
+    justify-content: space-around;
+  }
 }
 .page-footer li {
   padding-bottom: 8px;
@@ -456,30 +477,37 @@ h3 {
 }
 
 .functionning {
-  padding: 45px 5% 45px 5%;
+  padding: 45px 5% 70px 9%;
   background-color: white;
 }
 .functionning h2 {
-  padding-bottom: 5px;
+  padding-bottom: 25px;
+  margin-left: -4.5%;
 }
 .functionning ol {
   counter-reset: li;
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  gap: 25px;
 }
 @media screen and (min-width: 768px) {
   .functionning ol {
-    display: flex;
+    flex-direction: row;
     justify-content: space-between;
   }
 }
 .functionning__item {
   background-color: #f6f6f6;
   padding: 26px 25px 26px 25px;
-  margin: 25px 0px 25px 10px;
   border-radius: 25px;
   font-weight: 500;
   box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.2);
   position: relative;
+  width: 100%;
+  max-width: 440px;
+  margin: auto;
   cursor: default;
 }
 @media screen and (min-width: 768px) {
@@ -530,15 +558,21 @@ h3 {
 }
 
 .restaurants {
-  padding: 50px 5% 50px 5%;
+  padding: 50px 5% 60px 5%;
+  background: #f6f6f6;
 }
 .restaurants h2 {
   padding-bottom: 15px;
 }
 
+.container__restaurants {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 @media screen and (min-width: 768px) {
   .container__restaurants {
-    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
   }
@@ -551,6 +585,9 @@ h3 {
   position: relative;
   margin-top: 10px;
   margin-bottom: 15px;
+  width: 100%;
+  max-width: 440px;
+  margin: auto;
 }
 @media screen and (min-width: 768px) {
   .restaurants__card {
@@ -606,11 +643,11 @@ h3 {
   width: 100%;
   height: 240px;
   object-fit: cover;
-  object-position: 50% 0%;
 }
 @media screen and (min-width: 1024px) {
   .menu-header__img img {
     height: 350px;
+    object-position: 50% 55%;
   }
 }
 .menu-header__title {
