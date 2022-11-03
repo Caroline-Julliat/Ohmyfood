@@ -1,9 +1,11 @@
 @import "./utils/variables";
-@import "./utils/functions";
 @import "./utils/mixins";
+@import "./utils/keyframes";
+@import "./base/base";
 @import "./base/reset";
 @import "./base/typography";
-@import "./components/buttons";
+@import "./components/button-gradient";
+@import "./components/button-like";
 @import "./components/loader";
 @import "./layouts/header";
 @import "./layouts/footer";

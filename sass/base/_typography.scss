@@ -1,37 +1,32 @@
-*{
-    font-family: $font_body;
-    font-size: 16px;
-    font-weight: 300;
+* {
+  font-family: $font_body;
+  font-size: 16px;
+  font-weight: 300;
 }
 
 .big-title {
-    font-size: 24px;
-    font-weight: 600;
+  font-size: 24px;
+  font-weight: 600;
 }
 
 .menu-title {
-    font-family: $font_heading;
-    font-size: 28px;
+  font-family: $font_heading;
+  font-size: 28px;
 }
 
-.uppercase-title{
-    text-transform: uppercase;
+.uppercase-title {
+  text-transform: uppercase;
 }
 
-h3{
-    font-size: 18px;
-    font-weight: 600;
+h3 {
+  font-size: 18px;
+  font-weight: 600;
 }
 
-p {
-    margin-top: 4px;
-    margin-bottom: 4px;
+.menu p {
+  font-size: 15px;
 }
 
-.menu p{
-    font-size: 15px;
-}
-
-.home-page p{
-    font-size: 18px;
+.home-page p {
+  font-size: 18px;
 }

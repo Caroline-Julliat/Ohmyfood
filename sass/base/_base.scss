@@ -1,0 +1,28 @@
+// GENERAL
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+p {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+// STICKY FOOTER
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: $color-bg1;
+}
+
+footer {
+  margin-top: auto;
+}

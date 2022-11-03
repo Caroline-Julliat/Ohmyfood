@@ -1,22 +1,22 @@
 // FOOTER
 
-.page-footer{
-    background-color: $color-bg-dark;
-    height: 200px;
-    padding-top: 25px;
-    img{
-        width: 100px;
-        padding-bottom: 20px;
-    }
-    li{
-        padding-bottom: 8px;
-    }
-    a{
-        color: white;
-        font-weight: 400;
-    }
-    i{
-        font-size: 12px;
-        margin-right: 10px;
-    }
+.page-footer {
+  background-color: $color-bg-dark;
+  height: 200px;
+  padding: 25px 5% 25px 5%;
+  img {
+    width: 100px;
+    padding-bottom: 20px;
+  }
+  li {
+    padding-bottom: 8px;
+  }
+  a {
+    color: white;
+    font-weight: 400;
+  }
+  i {
+    font-size: 12px;
+    margin-right: 10px;
+  }
 }
