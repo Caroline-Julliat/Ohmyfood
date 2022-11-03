@@ -231,7 +231,7 @@ h3 {
 }
 .btn:hover {
   background: linear-gradient(170deg, #ff93e1 0%, #a16be0 100%);
-  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
 .like-btn {
@@ -359,8 +359,7 @@ h3 {
 }
 
 .page-header {
-  height: 65px;
-  padding: 25px 0 15px 0;
+  padding: 20px 0 12px 0;
   display: flex;
   position: relative;
   background: white;
@@ -588,6 +587,7 @@ h3 {
   width: 100%;
   max-width: 440px;
   margin: auto;
+  transition: transform 300ms;
 }
 @media screen and (min-width: 768px) {
   .restaurants__card {
@@ -598,6 +598,9 @@ h3 {
   .restaurants__card {
     width: 23%;
   }
+}
+.restaurants__card:hover {
+  transform: scale(1.02);
 }
 .restaurants__card__img {
   width: 100%;
@@ -676,6 +679,7 @@ h3 {
 }
 
 .container-category {
+  background: #f6f6f6;
   padding-left: 4%;
   padding-right: 4%;
 }
@@ -732,6 +736,9 @@ h3 {
 .menu-item3 {
   animation-delay: 900ms;
 }
+.menu-item4 {
+  animation-delay: 1200ms;
+}
 .menu-item__detail {
   padding: 5px 15px;
   overflow: hidden;
@@ -760,14 +767,14 @@ h3 {
   padding: 0 20px;
   display: flex;
   align-items: center;
-  margin-right: -60px;
-  transition: all 1000ms;
+  margin-right: -65px;
+  transition: all 500ms;
 }
 .menu-item__price .fa-circle-check {
   color: white;
-  font-size: 20px;
+  font-size: 22px;
   transform: rotate(0deg);
-  transition: all 1000ms;
+  transition: all 500ms;
 }
 .menu-item:hover .check-box {
   margin-right: 0;
@@ -777,7 +784,7 @@ h3 {
 }
 
 .btn-section {
-  display: flex;
+  background: #f6f6f6;
   display: flex;
   align-items: center;
   justify-content: center;

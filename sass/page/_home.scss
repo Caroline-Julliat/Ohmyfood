@@ -151,11 +151,15 @@
   width: 100%;
   max-width: 440px;
   margin: auto;
+  transition: transform 300ms;
   @include from-tablet-size {
     width: 48%;
   }
   @include desktop-only {
     width: 23%;
+  }
+  &:hover{
+    transform: scale(1.02);
   }
   &__img {
     width: 100%;

@@ -39,6 +39,7 @@
 // MENU CATEGORY //
 
 .container-category {
+  background: $color-bg1;
   padding-left: 4%;
   padding-right: 4%;
   @include desktop-only {
@@ -92,6 +93,9 @@
   &3 {
     animation-delay: 900ms;
   }
+  &4 {
+    animation-delay: 1200ms;
+  }
   // item detail
   &__detail {
     padding: 5px 15px;
@@ -121,14 +125,14 @@
       padding: 0 20px;
       display: flex;
       align-items: center;
-      margin-right: -60px;
-      transition: all 1000ms;
+      margin-right: -65px;
+      transition: all 500ms;
     }
     .fa-circle-check {
       color: white;
-      font-size: 20px;
+      font-size: 22px;
       transform: rotate(0deg);
-      transition: all 1000ms;
+      transition: all 500ms;
     }
   }
   // hover effect
@@ -145,7 +149,7 @@
 // BUTTON SECTION //
 
 .btn-section {
-  display: flex;
+  background: $color-bg1;
   @include center;
   padding-bottom: 30px;
   &__menu {
