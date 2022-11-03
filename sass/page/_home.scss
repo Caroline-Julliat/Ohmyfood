@@ -6,7 +6,6 @@
 // FORM
 
 .location-form {
-    background-color: $color_bg1;
     padding-bottom: 30px;
     @include from-tablet-size{
         background-image: url(images/bg-img.jpg);
@@ -60,6 +59,7 @@
 .functionning{
     padding-top: 45px;
     padding-bottom: 45px;
+    background-color: white;
     h2{
         padding-bottom: 5px;
     }
@@ -124,7 +124,6 @@
 // RESTAURANTS SECTION
 
 .restaurants{
-    background-color: $color_bg1;
     padding: 50px 5% 50px 5%;
     h2{
         padding-bottom: 15px;

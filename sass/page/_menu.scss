@@ -38,7 +38,6 @@
 // MENU CATEGORY
 
 .container-category{
-    background-color: $color_bg1;
     padding-left: 4%;
     padding-right: 4%;
     @include desktop-only{
@@ -169,7 +168,6 @@
 .btn-section{
     display: flex;
     @include center;
-    background: $color-bg1;
     padding-bottom: 30px;
     &__menu{
         padding: 16px 48px;

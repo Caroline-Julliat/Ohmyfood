@@ -88,6 +88,20 @@ a {
   text-decoration: none;
 }
 
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #F6F6F6;
+}
+
+footer {
+  margin-top: auto;
+}
+
 * {
   font-family: roboto, sans-serif;
   font-size: 16px;
@@ -385,7 +399,6 @@ p {
 }
 
 .location-form {
-  background-color: #F6F6F6;
   padding-bottom: 30px;
 }
 @media screen and (min-width: 768px) {
@@ -444,6 +457,7 @@ p {
 .functionning {
   padding-top: 45px;
   padding-bottom: 45px;
+  background-color: white;
 }
 .functionning h2 {
   padding-bottom: 5px;
@@ -516,7 +530,6 @@ p {
 }
 
 .restaurants {
-  background-color: #F6F6F6;
   padding: 50px 5% 50px 5%;
 }
 .restaurants h2 {
@@ -625,7 +638,6 @@ p {
 }
 
 .container-category {
-  background-color: #F6F6F6;
   padding-left: 4%;
   padding-right: 4%;
 }
@@ -743,7 +755,6 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #F6F6F6;
   padding-bottom: 30px;
 }
 .btn-section__menu {
